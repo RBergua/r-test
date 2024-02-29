@@ -2,8 +2,8 @@
  **************************************************************************************************
  OpenFAST
 
- Copyright (C) 2023 National Renewable Energy Laboratory
- Copyright (C) 2023 Envision Energy USA LTD
+ Copyright (C) 2024 National Renewable Energy Laboratory
+ Copyright (C) 2024 Envision Energy USA LTD
 
  This program is licensed under Apache License Version 2.0 and comes with ABSOLUTELY NO WARRANTY.
  See the "LICENSE" file distributed with this software for details.
@@ -11,15 +11,15 @@
 
  OpenFAST--128-NOTFOUND
  Compile Info:
-  - Compiler: GCC version 12.1.0
+  - Compiler: GCC version 12.3.0
   - Architecture: 64 bit
   - Precision: double
-  - OpenMP: Yes, number of threads: 2/2
-  - Date: Jul 28 2023
-  - Time: 14:11:31
+  - OpenMP: Yes, number of threads: 4/4
+  - Date: Feb 29 2024
+  - Time: 16:40:53
  Execution Info:
-  - Date: 07/28/2023
-  - Time: 14:31:41+0000
+  - Date: 02/29/2024
+  - Time: 16:54:57+0000
 
  OpenFAST input file heading:
      FAST Certification Test #26: NREL 5.0 MW Baseline Wind Turbine (Onshore)
@@ -34,14 +34,27 @@
  FAST_InitializeAll:FAST_Init:ValidateInputData:LinOutJac can be used only when
  LinInputs=LinOutputs=2.
 
+ Mapping: ED%y%BladeRootMotion(1) -> BD(1)%u%RootMotion                                                                                   
+ Mapping: ED%y%BladeRootMotion(2) -> BD(2)%u%RootMotion                                                                                   
+ Mapping: ED%y%BladeRootMotion(3) -> BD(3)%u%RootMotion                                                                                   
+ Mapping: BD(1)%y%ReactionForce -> ED%u%HubPtLoad [BD(1)%u%RootMotion -> ED%y%HubPtMotion]                                                
+ Mapping: BD(2)%y%ReactionForce -> ED%u%HubPtLoad [BD(2)%u%RootMotion -> ED%y%HubPtMotion]                                                
+ Mapping: BD(3)%y%ReactionForce -> ED%u%HubPtLoad [BD(3)%u%RootMotion -> ED%y%HubPtMotion]                                                
+ Mapping: ED Yaw -> SrvD Yaw                                                                                                              
+ Mapping: ED YawRate -> SrvD YawRate                                                                                                      
+ Mapping: ED HSS_Spd -> SrvD HSS_Spd                                                                                                      
+ Mapping: ED HSS_Spd -> SrvD HSS_Spd                                                                                                      
+ Mapping: SrvD BlPitchCom -> ED BlPitchCom                                                                                                
+ Mapping: SrvD YawMom -> ED YawMom                                                                                                        
+ Mapping: SrvD GenTrq -> ED GenTrq                                                                                                        
   Time: 0 of 5 seconds.
                                                                                                    Performing linearization 1 at simulation time 0 s. (RotSpeed=12.1 rpm, BldPitch1=0 deg)          
-                                                                                                   Time: 1 of 5 seconds.  Estimated final completion at 14:35:05.                                                                                                                                      Time: 2 of 5 seconds.  Estimated final completion at 14:33:03.                                                                                                                                      Time: 3 of 5 seconds.  Estimated final completion at 14:33:03.                                                                                                                                      Time: 4 of 5 seconds.  Estimated final completion at 14:33:03.                                                                                                                                     
-  Total Real Time:       79.422 seconds
-  Total CPU Time:        38.467 seconds
-  Simulation CPU Time:   38.21 seconds
+                                                                                                   Time: 1 of 5 seconds.  Estimated final completion at 16:55:28.                                                                                                                                      Time: 2 of 5 seconds.  Estimated final completion at 16:55:15.                                                                                                                                      Time: 3 of 5 seconds.  Estimated final completion at 16:55:16.                                                                                                                                      Time: 4 of 5 seconds.  Estimated final completion at 16:55:18.                                                                                                                                     
+  Total Real Time:       19.372 seconds
+  Total CPU Time:        20.544 seconds
+  Simulation CPU Time:   19.521 seconds
   Simulated Time:        5.001 seconds
-  Time Ratio (Sim/CPU):  0.13088
+  Time Ratio (Sim/CPU):  0.25619
 
   OpenFAST terminated normally.
 
