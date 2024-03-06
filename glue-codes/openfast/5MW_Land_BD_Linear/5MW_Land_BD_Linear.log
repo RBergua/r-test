@@ -15,11 +15,11 @@
   - Architecture: 64 bit
   - Precision: double
   - OpenMP: Yes, number of threads: 4/4
-  - Date: Mar  1 2024
-  - Time: 18:56:28
+  - Date: Mar  6 2024
+  - Time: 00:00:41
  Execution Info:
-  - Date: 03/01/2024
-  - Time: 19:09:21+0000
+  - Date: 03/06/2024
+  - Time: 00:15:28+0000
 
  OpenFAST input file heading:
      FAST Certification Test #26: NREL 5.0 MW Baseline Wind Turbine (Onshore)
@@ -27,29 +27,34 @@
  Running ElastoDyn.
  Nodal outputs section of ElastoDyn input file not found or improperly formatted.
  Running BeamDyn.
- Nodal outputs section of BeamDyn input file not found or improperly formatted.
  Running BeamDyn.
- Nodal outputs section of BeamDyn input file not found or improperly formatted.
  Running BeamDyn.
- Nodal outputs section of BeamDyn input file not found or improperly formatted.
  Running ServoDyn.
 
  FAST_InitializeAll:FAST_Init:ValidateInputData:LinOutJac can be used only when
  LinInputs=LinOutputs=2.
 
+ Mapping: ED%y%BladeRootMotion(1) -> BD(1)%u%RootMotion                                                                                   
+ Mapping: ED%y%BladeRootMotion(2) -> BD(2)%u%RootMotion                                                                                   
+ Mapping: ED%y%BladeRootMotion(3) -> BD(3)%u%RootMotion                                                                                   
+ Mapping: BD(1)%y%ReactionForce -> ED%u%HubPtLoad [BD(1)%u%RootMotion -> ED%y%HubPtMotion]                                                
+ Mapping: BD(2)%y%ReactionForce -> ED%u%HubPtLoad [BD(2)%u%RootMotion -> ED%y%HubPtMotion]                                                
+ Mapping: BD(3)%y%ReactionForce -> ED%u%HubPtLoad [BD(3)%u%RootMotion -> ED%y%HubPtMotion]                                                
+ Mapping: ED Yaw -> SrvD Yaw                                                                                                              
+ Mapping: ED YawRate -> SrvD YawRate                                                                                                      
+ Mapping: ED HSS_Spd -> SrvD HSS_Spd                                                                                                      
+ Mapping: ED HSS_Spd -> SrvD HSS_Spd                                                                                                      
+ Mapping: SrvD BlPitchCom -> ED BlPitchCom                                                                                                
+ Mapping: SrvD YawMom -> ED YawMom                                                                                                        
+ Mapping: SrvD GenTrq -> ED GenTrq                                                                                                        
   Time: 0 of 1.0015 seconds.
-
-                                                                                                  
- Time: 1 of 1.0015 seconds.  Estimated final completion at 19:09:26.                              
-                                                                                                  
- Performing linearization 1 at simulation time 1.0005 s. (RotSpeed=12.1 rpm, BldPitch1=0 deg)     
-
-                                                                                                  
-  Total Real Time:       5.596 seconds
-  Total CPU Time:        7.0826 seconds
-  Simulation CPU Time:   6.2233 seconds
+                                                                                                   Time: 1 of 1.0015 seconds.  Estimated final completion at 00:15:32.                                                                                                                                 Performing linearization 1 at simulation time 1.0005 s. (RotSpeed=12.1 rpm, BldPitch1=0 deg)     
+                                                                                                  
+  Total Real Time:       6.312 seconds
+  Total CPU Time:        8.3941 seconds
+  Simulation CPU Time:   7.2422 seconds
   Simulated Time:        1.002 seconds
-  Time Ratio (Sim/CPU):  0.16101
+  Time Ratio (Sim/CPU):  0.13835
 
   OpenFAST terminated normally.
 

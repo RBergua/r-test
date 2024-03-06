@@ -1,27 +1,11 @@
 
 FAST Summary File
 
-Predictions were generated on 26-Feb-2024 at 22:46:50 using OpenFAST, compiled as a 64-bit application using double precision at commit HEAD-HASH-NOTFOUND
-  compiled with
+Predictions were generated on 06-Mar-2024 at 00:17:41 using OpenFAST, compiled on Mar  6 2024 at 00:00:41 as a 64-bit application using double precision at commit -128-NOTFOUND
+  run with
     NWTC Subroutine Library
     ElastoDyn
-    BeamDyn (unknown version, unknown date) [not called]
-    InflowWind (unknown version, unknown date) [not called]
-    AeroDyn14 (unknown version, unknown date) [not called]
-    AeroDyn (unknown version, unknown date) [not called]
-    ServoDyn (unknown version, unknown date) [not called]
-    HydroDyn (unknown version, unknown date) [not called]
     SubDyn
-    ExtPtfm_MCKF (unknown version, unknown date) [not called]
-    MAP (unknown version, unknown date) [not called]
-    FEAMooring (unknown version, unknown date) [not called]
-    MoorDyn (unknown version, unknown date) [not called]
-    OrcaFlexInterface (unknown version, unknown date) [not called]
-    IceFloe (unknown version, unknown date) [not called]
-    IceDyn (unknown version, unknown date) [not called]
-
-
-Modeling a land-based turbine
 Description from the FAST input file: 
   FAST Certification Test #19: NREL 5.0 MW Baseline Wind Turbine with OC3 Monopile RF Configuration, for use in offshore analysis
 
